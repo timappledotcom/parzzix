@@ -1257,6 +1257,16 @@ hr {
 
 .header-content {
     display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+
+    @media (max-width: 768px) {
+        gap: var(--space-md);
+    }
+}
+
+.header-top {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
