@@ -1,0 +1,48 @@
+<div class="post-meta">
+    <div class="post-meta-primary">
+        {{ if .Site.Params.theme.showPostDate | default true }}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" itemprop="datePublished">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+
+        {{- if .Lastmod }}
+        {{- if ne .Date .Lastmod }}
+        <time class="post-updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" itemprop="dateModified">
+            Updated {{ .Lastmod.Format "January 2, 2006" }}
+        </time>
+        {{- end }}
+        {{- end }}
+        {{ end }}
+
+        {{ if .Site.Params.theme.showPostAuthor | default true }}
+        {{- if .Params.author }}
+        <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            by <span itemprop="name">{{ .Params.author }}</span>
+        </span>
+        {{- else if .Site.Params.author }}
+        <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            by <span itemprop="name">{{ .Site.Params.author }}</span>
+        </span>
+        {{- end }}
+        {{ end }}
+    </div>
+
+    <div class="post-meta-secondary">
+        {{ if .Site.Params.theme.showReadingTime | default true }}
+        {{- if .Params.readingTime }}
+        <span class="reading-time">{{ .Params.readingTime }} min read</span>
+        {{- else }}
+        {{- $readingTime := div (countwords .Content) 200 }}
+        {{- if gt $readingTime 0 }}
+        <span class="reading-time">{{ $readingTime }} min read</span>
+        {{- end }}
+        {{- end }}
+        {{ end }}
+
+        {{ if and .Site.Params.theme.showEditLink .Site.Params.theme.editBaseURL }}
+        <a href="{{ .Site.Params.theme.editBaseURL }}/{{ .File.Path }}" class="edit-link" target="_blank" rel="noopener">
+            Edit this page
+        </a>
+        {{ end }}
+    </div>
+</div>

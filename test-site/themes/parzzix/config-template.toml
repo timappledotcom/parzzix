@@ -1,0 +1,365 @@
+# =============================================================================
+# Parzzix Hugo Theme - Complete Configuration Template
+# =============================================================================
+#
+# Copy the sections you need to your site's config.toml file.
+# Uncomment (remove #) from the lines you want to use.
+#
+# This file contains all available configuration options for the Parzzix theme.
+# =============================================================================
+
+# =============================================================================
+# Basic Site Configuration
+# =============================================================================
+
+# baseURL = "https://yourdomain.com"
+# languageCode = "en-us"
+# title = "Your Site Title"
+# theme = "parzzix"
+
+# =============================================================================
+# Content and Pagination Settings
+# =============================================================================
+
+# [pagination]
+#   pagerSize = 10
+#   path = "page"
+
+# [taxonomies]
+#   tag = "tags"
+#   category = "categories"
+
+# [outputs]
+#   home = ["HTML", "RSS", "JSON"]
+#   page = ["HTML"]
+#   section = ["HTML", "RSS"]
+
+# =============================================================================
+# Theme Parameters
+# =============================================================================
+
+[params]
+
+# -----------------------------------------------------------------------------
+# Site Metadata
+# -----------------------------------------------------------------------------
+
+# Basic site information
+# description = "Your site description for SEO and social sharing"
+# author = "Your Name"
+# email = "your.email@example.com"
+
+# Site branding (optional)
+# logo = "/images/logo.png"          # Path to your logo image
+# favicon = "/images/favicon.ico"    # Path to your favicon
+
+# -----------------------------------------------------------------------------
+# Social Media Links
+# -----------------------------------------------------------------------------
+
+# [params.social]
+#   twitter = "https://x.com/yourusername"
+#   github = "https://github.com/yourusername"
+#   linkedin = "https://linkedin.com/in/yourusername"
+#   email = "mailto:your.email@example.com"
+#   mastodon = "https://mastodon.social/@yourusername"
+#   bluesky = "https://bsky.app/profile/yourusername.bsky.social"
+#   nostr = "nostr:npub1yourpublickey"     # Your Nostr public key (npub format)
+#   youtube = "https://youtube.com/@yourusername"
+#   instagram = "https://instagram.com/yourusername"
+#   facebook = "https://facebook.com/yourusername"
+#   discord = "https://discord.gg/yourinvite"
+#   rss = true                       # Show RSS feed link
+
+# -----------------------------------------------------------------------------
+# Theme Customization
+# -----------------------------------------------------------------------------
+
+# [params.theme]
+#   # Color scheme
+#   colorScheme = "dark"             # light/dark/auto
+#
+#   # Post display options
+#   showReadingTime = true           # Show estimated reading time
+#   showPostDate = true              # Show publication date
+#   showPostAuthor = true            # Show post author
+#   showPostTags = true              # Show post tags
+#   showPostSummary = true           # Show post excerpts on list pages
+#
+#   # Pagination (legacy - use [pagination] section above instead)
+#   postsPerPage = 10                # Number of posts per page
+#
+#   # Edit links (for GitHub/GitLab integration)
+#   showEditLink = false             # Show "Edit this page" links
+#   editBaseURL = "https://github.com/username/repo/edit/main/content"
+
+# -----------------------------------------------------------------------------
+# SEO and Analytics
+# -----------------------------------------------------------------------------
+
+# [params.seo]
+#   # Analytics
+#   googleAnalytics = "GA-TRACKING-ID"
+#
+#   # Site verification
+#   googleSiteVerification = "verification-code"
+#   bingSiteVerification = "verification-code"
+#
+#   # Social media
+#   twitterHandle = "yourusername"   # Without @ symbol
+#
+#   # Open Graph defaults
+#   images = ["/images/og-default.jpg"]
+#
+#   # JSON-LD structured data
+#   enableJSONLD = true
+
+# -----------------------------------------------------------------------------
+# Comments System
+# -----------------------------------------------------------------------------
+
+# [params.comments]
+#   enabled = true
+#   provider = "utterances"          # disqus, utterances, giscus
+#
+#   # For Disqus
+#   disqusShortname = "your-disqus-shortname"
+#
+#   # For Utterances (GitHub-based comments)
+#   utterancesRepo = "username/repo"
+#   utterancesTheme = "github-dark"  # github-light, github-dark, preferred-color-scheme
+#   utterancesLabel = "💬 comment"
+#
+#   # For Giscus (GitHub Discussions-based comments)
+#   giscusRepo = "username/repo"
+#   giscusRepoId = "your-repo-id"
+#   giscusCategory = "General"
+#   giscusCategoryId = "your-category-id"
+#   giscusTheme = "dark"             # light, dark, preferred_color_scheme
+#   giscusReactions = true
+
+# -----------------------------------------------------------------------------
+# Advanced Features
+# -----------------------------------------------------------------------------
+
+# [params.features]
+#   # Search functionality
+#   enableSearch = false             # Enable client-side search
+#   searchProvider = "fuse"          # fuse, lunr
+#
+#   # Table of contents
+#   enableTOC = true                 # Show table of contents on posts
+#   tocLevels = 3                    # Maximum heading levels in TOC
+#
+#   # Related posts
+#   enableRelatedPosts = true        # Show related posts
+#   relatedPostsCount = 3            # Number of related posts to show
+#
+#   # Reading progress
+#   enableReadingProgress = false    # Show reading progress bar
+#
+#   # Back to top button
+#   enableBackToTop = true           # Show back to top button
+#
+#   # Dark mode toggle
+#   enableDarkModeToggle = false     # Show dark/light mode toggle
+
+# -----------------------------------------------------------------------------
+# Custom CSS and JavaScript
+# -----------------------------------------------------------------------------
+
+# [params.custom]
+#   # Custom CSS files (relative to assets/css/)
+#   css = ["custom.css", "theme-overrides.css"]
+#
+#   # Custom JavaScript files (relative to assets/js/)
+#   js = ["custom.js", "analytics.js"]
+#
+#   # Custom head content (HTML)
+#   customHead = '''
+#   <!-- Your custom head content here -->
+#   '''
+#
+#   # Custom footer content (HTML)
+#   customFooter = '''
+#   <!-- Your custom footer content here -->
+#   '''
+
+# =============================================================================
+# Navigation Menu
+# =============================================================================
+
+# [[menu.main]]
+#   name = "Home"
+#   url = "/"
+#   weight = 10
+
+# [[menu.main]]
+#   name = "About"
+#   url = "/about/"
+#   weight = 20
+
+# [[menu.main]]
+#   name = "Posts"
+#   url = "/posts/"
+#   weight = 30
+
+# [[menu.main]]
+#   name = "Tags"
+#   url = "/tags/"
+#   weight = 40
+
+# [[menu.main]]
+#   name = "Categories"
+#   url = "/categories/"
+#   weight = 50
+
+# [[menu.main]]
+#   name = "Contact"
+#   url = "/contact/"
+#   weight = 60
+
+# Secondary menu (footer links)
+# [[menu.footer]]
+#   name = "Privacy Policy"
+#   url = "/privacy/"
+#   weight = 10
+
+# [[menu.footer]]
+#   name = "Terms of Service"
+#   url = "/terms/"
+#   weight = 20
+
+# =============================================================================
+# Content Markup Configuration
+# =============================================================================
+
+# [markup]
+#   [markup.goldmark]
+#     [markup.goldmark.renderer]
+#       unsafe = true                # Allow HTML in markdown
+#   [markup.highlight]
+#     style = "github-dark"          # Syntax highlighting theme
+#     lineNos = false                # Show line numbers
+#     codeFences = true              # Enable code fences
+#     guessSyntax = true             # Guess syntax for unlabeled code blocks
+#     tabWidth = 2                   # Tab width for code blocks
+#     lineNumbersInTable = true      # Render line numbers in table
+
+# =============================================================================
+# Privacy Settings
+# =============================================================================
+
+# [privacy]
+#   [privacy.googleAnalytics]
+#     disable = false
+#     respectDoNotTrack = true
+#     anonymizeIP = true
+#   [privacy.x]                      # Twitter/X
+#     disable = false
+#     enableDNT = true
+#   [privacy.youtube]
+#     disable = false
+#     privacyEnhanced = true
+
+# =============================================================================
+# Site Security
+# =============================================================================
+
+# [security]
+#   [security.exec]
+#     allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
+#   [security.funcs]
+#     getenv = ['^HUGO_', '^CI$']
+
+# =============================================================================
+# Development and Build Settings
+# =============================================================================
+
+# [build]
+#   writeStats = true                # Write build statistics
+#   [build.buildStats]
+#     enable = true
+
+# [minify]
+#   disableCSS = false              # Minify CSS
+#   disableHTML = false             # Minify HTML
+#   disableJS = false               # Minify JavaScript
+#   disableJSON = false             # Minify JSON
+#   disableSVG = false              # Minify SVG
+#   disableXML = false              # Minify XML
+
+# =============================================================================
+# Social Media and Nostr Notes
+# =============================================================================
+
+# For Nostr, you can use several formats:
+# 1. Direct npub: nostr:npub1yourpublickey
+# 2. Web client link: https://iris.to/npub1yourpublickey
+# 3. Snort client: https://snort.social/p/npub1yourpublickey
+# 4. Damus web: https://damus.io/npub1yourpublickey
+#
+# The theme will handle nostr: protocol links appropriately.
+
+# =============================================================================
+# Example Front Matter Variables
+# =============================================================================
+
+# The following variables can be used in your content front matter:
+#
+# ---
+# title: "Your Post Title"
+# date: 2024-01-01T00:00:00Z
+# description: "Post description for SEO"
+# author: "Post Author"              # Overrides site author
+# tags: ["tag1", "tag2"]
+# categories: ["category1"]
+# draft: false                       # Set to true to hide from build
+# featured: true                     # Mark as featured content
+# readingTime: 5                     # Override calculated reading time
+# showTOC: true                      # Show table of contents for this post
+# showComments: true                 # Enable comments for this post
+# showRelated: true                  # Show related posts
+# images: ["/images/post-image.jpg"] # Social sharing images
+# ---
+
+# =============================================================================
+# Catppuccin Mocha Color Reference
+# =============================================================================
+
+# The theme uses Catppuccin Mocha colors by default:
+#
+# Background Colors:
+# - Base: #1e1e2e (main background)
+# - Surface0: #313244 (secondary background)
+# - Surface1: #45475a (borders)
+# - Surface2: #585b70 (light borders)
+#
+# Text Colors:
+# - Text: #cdd6f4 (primary text)
+# - Subtext1: #bac2de (secondary text)
+# - Subtext0: #a6adc8 (muted text)
+#
+# Accent Colors:
+# - Blue: #89b4fa (links)
+# - Sapphire: #74c7ec (link hover)
+# - Mauve: #cba6f7 (accent primary)
+# - Pink: #f38ba8 (accent secondary)
+# - Green: #a6e3a1 (success)
+# - Yellow: #f9e2af (warning)
+# - Red: #f38ba8 (error)
+# - Sky: #89dceb (info)
+
+# =============================================================================
+# Migration Notes
+# =============================================================================
+
+# When migrating from other themes:
+# 1. Update front matter to match expected fields
+# 2. Check menu configuration format
+# 3. Update asset paths to use Hugo's asset pipeline
+# 4. Migrate custom CSS to theme's SCSS structure
+# 5. Test responsive design on mobile devices
+#
+# For more information, see the theme documentation at:
+# https://github.com/yourusername/parzzix-theme

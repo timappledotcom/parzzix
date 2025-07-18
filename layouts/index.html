@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="homepage">
+    <div class="container">
+        {{ if .Site.Params.description }}
+        <div class="site-description">
+            <p>{{ .Site.Params.description }}</p>
+        </div>
+        {{ end }}
+
+        <div class="posts-by-year">
+            {{ $posts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+            {{ range $posts.GroupByDate "2006" }}
+            <section class="year-group">
+                <h2 class="year-heading">{{ .Key }}</h2>
+                <div class="posts-list">
+                    {{ range .Pages }}
+                        {{ partial "summary.html" . }}
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Tim Apple Blog</title>
+    <link>https://example.com/tags/hugo/</link>
+    <description>Recent content in Hugo on Tim Apple Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Parzzix Theme</title>
+      <link>https://example.com/posts/welcome/</link>
+      <pubDate>Mon, 01 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/welcome/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-parzzix&#34;&gt;Welcome to Parzzix&lt;/h1&gt;&#xA;&lt;p&gt;This is a sample blog post to demonstrate the Parzzix Hugo theme. The theme provides a clean, minimalist design that focuses on readability and performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clean Design&lt;/strong&gt;: Minimalist layout that puts content first&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Responsive&lt;/strong&gt;: Works great on mobile and desktop&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: Optimized for performance with minimal JavaScript&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SEO Friendly&lt;/strong&gt;: Built with SEO best practices&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To use this theme in your Hugo site, simply add it to your &lt;code&gt;themes&lt;/code&gt; directory and configure it in your &lt;code&gt;config.yaml&lt;/code&gt; file.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Current on Tim Apple Blog</title>
+    <link>https://example.com/tags/current/</link>
+    <description>Recent content in Current on Tim Apple Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/current/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recent Post</title>
+      <link>https://example.com/posts/recent-post/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/recent-post/</guid>
+      <description>&lt;h1 id=&#34;recent-post&#34;&gt;Recent Post&lt;/h1&gt;&#xA;&lt;p&gt;This is a more recent post from 2025, showing how the blog handles current year posts.&lt;/p&gt;&#xA;&lt;p&gt;The layout should group this under the 2025 heading.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

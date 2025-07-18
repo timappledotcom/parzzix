@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tim Apple Blog</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Tim Apple Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recent Post</title>
+      <link>https://example.com/posts/recent-post/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/recent-post/</guid>
+      <description>&lt;h1 id=&#34;recent-post&#34;&gt;Recent Post&lt;/h1&gt;&#xA;&lt;p&gt;This is a more recent post from 2025, showing how the blog handles current year posts.&lt;/p&gt;&#xA;&lt;p&gt;The layout should group this under the 2025 heading.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Another Test Post</title>
+      <link>https://example.com/posts/another-test/</link>
+      <pubDate>Sun, 15 Dec 2024 14:30:00 +0000</pubDate>
+      <guid>https://example.com/posts/another-test/</guid>
+      <description>&lt;h1 id=&#34;another-test-post&#34;&gt;Another Test Post&lt;/h1&gt;&#xA;&lt;p&gt;This is another sample post to demonstrate how posts are grouped by year in the blog listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;&#xA;&lt;p&gt;This post is from 2024, so it should appear under the 2024 heading in the blog index.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to Parzzix Theme</title>
+      <link>https://example.com/posts/welcome/</link>
+      <pubDate>Mon, 01 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/welcome/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-parzzix&#34;&gt;Welcome to Parzzix&lt;/h1&gt;&#xA;&lt;p&gt;This is a sample blog post to demonstrate the Parzzix Hugo theme. The theme provides a clean, minimalist design that focuses on readability and performance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clean Design&lt;/strong&gt;: Minimalist layout that puts content first&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Responsive&lt;/strong&gt;: Works great on mobile and desktop&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: Optimized for performance with minimal JavaScript&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SEO Friendly&lt;/strong&gt;: Built with SEO best practices&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To use this theme in your Hugo site, simply add it to your &lt;code&gt;themes&lt;/code&gt; directory and configure it in your &lt;code&gt;config.yaml&lt;/code&gt; file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/about/</guid>
+      <description>&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;&#xA;&lt;p&gt;This is the about page for the Parzzix theme demo site.&lt;/p&gt;&#xA;&lt;p&gt;The Parzzix theme is designed to be clean, fast, and easy to use for Hugo-powered blogs and websites.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

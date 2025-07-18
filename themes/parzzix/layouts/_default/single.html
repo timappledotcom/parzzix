@@ -1,0 +1,60 @@
+{{ define "main" }}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>
+        {{- if .Params.description }}
+        <p class="post-description" itemprop="description">{{ .Params.description }}</p>
+        {{- end }}
+        {{- partial "post-meta.html" . -}}
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+        {{ .Content }}
+    </div>
+
+    {{ if and (.Site.Params.theme.showPostTags | default true) (or .Params.tags .Params.categories) }}
+    <footer class="post-footer">
+        {{- if .Params.tags }}
+        <div class="post-tags">
+            <span class="tags-label">Tags:</span>
+            {{- range .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-link" rel="tag">{{ . }}</a>
+            {{- end }}
+        </div>
+        {{- end }}
+
+        {{- if .Params.categories }}
+        <div class="post-categories">
+            <span class="categories-label">Categories:</span>
+            {{- range .Params.categories }}
+            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category-link">{{ . }}</a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </footer>
+    {{- end }}
+</article>
+
+{{- if .Site.Params.showRelatedPosts }}
+{{- $related := .Site.RegularPages.Related . | first 3 }}
+{{- if $related }}
+<aside class="related-posts">
+    <h2>Related Posts</h2>
+    <ul class="related-posts-list">
+        {{- range $related }}
+        <li class="related-post">
+            <a href="{{ .RelPermalink }}" class="related-post-link">
+                <h3 class="related-post-title">{{ .Title }}</h3>
+                <time class="related-post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+</aside>
+{{- end }}
+{{- end }}
+
+{{- partial "comments.html" . -}}
+{{ end }}

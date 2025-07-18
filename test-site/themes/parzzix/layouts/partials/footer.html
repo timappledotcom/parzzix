@@ -1,0 +1,26 @@
+<div class="footer-content">
+    <div class="footer-text">
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author | default .Site.Title }}. All rights reserved.</p>
+    </div>
+    {{ if .Site.Params.social }}
+    <nav class="footer-navigation" aria-label="Social Links">
+        <ul class="footer-links">
+            {{ range $name, $url := .Site.Params.social }}
+            {{ if ne $name "rss" }}
+            <li>
+                <a href="{{ $url }}" class="footer-link touch-target"
+                   {{ if not (hasPrefix $url "mailto:") }}target="_blank" rel="noopener"{{ end }}
+                   aria-label="{{ $name | title }}">{{ $name | title }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+            {{ if .Site.Params.social.rss }}
+            <li>
+                <a href="{{ absURL "index.xml" }}" class="footer-link touch-target"
+                   target="_blank" rel="noopener" aria-label="RSS Feed">RSS</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ end }}
+</div>

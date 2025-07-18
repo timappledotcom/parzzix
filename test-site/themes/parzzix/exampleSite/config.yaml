@@ -1,0 +1,121 @@
+baseURL: "https://example.com"
+languageCode: "en-us"
+title: "Bright and Steady"
+theme: "parzzix"
+
+# Theme-specific parameters
+params:
+  # Site metadata
+  description: "Hi and welcome, this is my place to babble and share thoughts, thanks for stopping by, and please sign the guestbook or shoot me a message. Cheers!"
+  author: "Your Name"
+  email: "your.email@example.com"
+
+  # Site branding
+  logo: "" # Path to logo image (optional)
+  favicon: "" # Path to favicon (optional)
+
+  # Social media links
+  social:
+    activitypub: "https://mastodon.social/@Parzzix"
+    bluesky: "https://bsky.app/profile/parzzix.com"
+    threads: "https://www.threads.com/@parzzix"
+    x: "https://x.com/parzzix"
+    github: "https://github.com/Parzzix"
+    rss: true # Enable RSS feed link
+
+  # Theme customization
+  theme:
+    # Color scheme (light/dark/auto)
+    colorScheme: "light"
+    # Show reading time on posts
+    showReadingTime: false
+    # Show post date
+    showPostDate: true
+    # Show post author
+    showPostAuthor: false
+    # Show post tags
+    showPostTags: false
+    # Show post summary on list pages
+    showPostSummary: false
+    # Number of posts per page
+    postsPerPage: 20
+    # Show "Edit this page" link (requires repo URL)
+    showEditLink: false
+    # Repository URL for edit links
+    editBaseURL: ""
+
+  # SEO and analytics
+  seo:
+    # Google Analytics tracking ID
+    googleAnalytics: ""
+    # Google Site Verification
+    googleSiteVerification: ""
+    # Bing Site Verification
+    bingSiteVerification: ""
+    # Twitter handle for Twitter Cards
+    twitterHandle: ""
+
+  # Comments system (optional)
+  comments:
+    enabled: false
+    provider: "" # disqus, utterances, etc.
+    disqusShortname: ""
+    utterancesRepo: ""
+    utterancesTheme: "github-light"
+
+# Navigation menu configuration
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "About"
+      url: "/about/"
+      weight: 20
+    - name: "Posts"
+      url: "/posts/"
+      weight: 30
+    - name: "Contact"
+      url: "/contact/"
+      weight: 40
+
+# Pagination settings
+pagination:
+  pagerSize: 10
+  path: "page"
+
+# Taxonomies
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Markup configuration for better content rendering
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    lineNos: false
+    codeFences: true
+    guessSyntax: true
+    tabWidth: 2
+
+# Output formats
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+
+# Privacy settings
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
+    anonymizeIP: true
+  x:
+    disable: false
+    enableDNT: true
+  youtube:
+    disable: false
+    privacyEnhanced: true

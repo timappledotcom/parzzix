@@ -1,0 +1,36 @@
+{{ if .Site.Params.comments.enabled }}
+<section class="comments-section">
+    <h3>Comments</h3>
+
+    {{ if eq .Site.Params.comments.provider "disqus" }}
+    {{ if .Site.Params.comments.disqusShortname }}
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "{{ .Permalink }}";
+            this.page.identifier = "{{ .RelPermalink }}";
+            this.page.title = "{{ .Title }}";
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://{{ .Site.Params.comments.disqusShortname }}.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ end }}
+
+    {{ else if eq .Site.Params.comments.provider "utterances" }}
+    {{ if .Site.Params.comments.utterancesRepo }}
+    <script src="https://utteranc.es/client.js"
+            repo="{{ .Site.Params.comments.utterancesRepo }}"
+            issue-term="pathname"
+            theme="{{ .Site.Params.comments.utterancesTheme | default "github-light" }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+    {{ end }}
+    {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,18 @@
+name = "Parzzix"
+license = "MIT"
+licenselink = "https://github.com/yourname/parzzix/blob/main/LICENSE"
+description = "A clean, minimalist Hugo theme that replicates the design aesthetic of blog.timapple.com. Features responsive design, excellent typography, and fast performance."
+homepage = "https://github.com/yourname/parzzix"
+tags = ["blog", "minimal", "clean", "responsive", "typography", "fast", "simple"]
+features = ["responsive", "typography", "minimal-design", "fast-loading", "accessibility"]
+min_version = "0.80.0"
+
+[author]
+  name = "Theme Developer"
+  homepage = "https://github.com/timappledotcom"
+
+# Original design inspiration
+[original]
+  name = "Parzzix"
+  homepage = "https://blog.timapple.com"
+  author = "Tim Apple"

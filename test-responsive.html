@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Responsive Design Test - Hugo Tim Apple Theme</title>
+    <style>
+        /* Include key responsive styles for testing */
+        :root {
+            --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --color-text-primary: #1a1a1a;
+            --color-link: #0066cc;
+            --color-background: #ffffff;
+            --color-background-alt: #f8f9fa;
+            --color-border: #e1e5e9;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --touch-target-min: 44px;
+            --touch-spacing: 0.75rem;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            margin: 0;
+            padding: var(--space-lg);
+            background: var(--color-background);
+            color: var(--color-text-primary);
+        }
+
+        .test-section {
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+        }
+
+        .touch-target {
+            min-height: var(--touch-target-min);
+            min-width: var(--touch-target-min);
+            padding: var(--touch-spacing);
+            background: var(--color-background-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            margin: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--color-text-primary);
+        }
+
+        .responsive-grid {
+            display: grid;
+            gap: var(--space-md);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        @media (max-width: 767px) {
+            .mobile-hidden { display: none; }
+            .mobile-block { display: block; }
+            .touch-target:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .desktop-hidden { display: none; }
+            .desktop-block { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hugo Tim Apple Theme - Responsive Design Test</h1>
+
+    <div class="test-section">
+        <h2>Touch Target Test</h2>
+        <p>These buttons should be at least 44px in height and width on mobile:</p>
+        <a href="#" class="touch-target">Button 1</a>
+        <a href="#" class="touch-target">Button 2</a>
+        <a href="#" class="touch-target">Button 3</a>
+    </div>
+
+    <div class="test-section">
+        <h2>Responsive Visibility Test</h2>
+        <p class="mobile-hidden desktop-block">This text is hidden on mobile (screen width < 768px)</p>
+        <p class="desktop-hidden mobile-block">This text is hidden on desktop (screen width >= 768px)</p>
+    </div>
+
+    <div class="test-section">
+        <h2>Responsive Grid Test</h2>
+        <div class="responsive-grid">
+            <div style="background: var(--color-background-alt); padding: var(--space-md);">Grid Item 1</div>
+            <div style="background: var(--color-background-alt); padding: var(--space-md);">Grid Item 2</div>
+            <div style="background: var(--color-background-alt); padding: var(--space-md);">Grid Item 3</div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Breakpoint Information</h2>
+        <p>Current viewport width: <span id="viewport-width"></span>px</p>
+        <p>Current breakpoint: <span id="current-breakpoint"></span></p>
+    </div>
+
+    <script>
+        function updateBreakpointInfo() {
+            const width = window.innerWidth;
+            document.getElementById('viewport-width').textContent = width;
+
+            let breakpoint;
+            if (width < 480) breakpoint = 'xs (< 480px)';
+            else if (width < 640) breakpoint = 'sm (480px - 639px)';
+            else if (width < 768) breakpoint = 'mobile (640px - 767px)';
+            else if (width < 1024) breakpoint = 'md (768px - 1023px)';
+            else if (width < 1280) breakpoint = 'lg (1024px - 1279px)';
+            else breakpoint = 'xl (>= 1280px)';
+
+            document.getElementById('current-breakpoint').textContent = breakpoint;
+        }
+
+        updateBreakpointInfo();
+        window.addEventListener('resize', updateBreakpointInfo);
+
+        // Test touch feedback
+        document.querySelectorAll('.touch-target').forEach(target => {
+            target.addEventListener('touchstart', function() {
+                this.style.backgroundColor = '#e9ecef';
+            }, { passive: true });
+
+            target.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.backgroundColor = '';
+                }, 150);
+            }, { passive: true });
+        });
+    </script>
+</body>
+</html>

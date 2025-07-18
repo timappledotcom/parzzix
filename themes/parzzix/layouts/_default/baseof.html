@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    {{- partial "head.html" . -}}
+</head>
+<body>
+    <div class="site-wrapper">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+            {{- partial "header.html" . -}}
+        </header>
+
+        <main class="site-main" id="main-content" role="main">
+            {{- block "main" . }}{{- end }}
+        </main>
+
+        <footer class="site-footer" role="contentinfo">
+            {{- partial "footer.html" . -}}
+        </footer>
+    </div>
+
+    {{- block "scripts" . }}{{- end }}
+
+    {{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

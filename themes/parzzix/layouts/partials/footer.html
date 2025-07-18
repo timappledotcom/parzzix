@@ -1,0 +1,20 @@
+<div class="footer-content">
+    <div class="footer-text">
+        <p>I would love to hear what you think, or if you just want to say hi, feel free to drop me a note <a href="/contact" class="footer-link">here</a> or sign my <a href="/guestbook" class="footer-link">guestbook</a>.</p>
+
+        {{ if .Site.Params.social }}
+        <p class="footer-social">
+            {{ $links := slice }}
+            {{ range $name, $url := .Site.Params.social }}
+            {{ if ne $name "rss" }}
+            {{ $links = $links | append (printf `<a href="%s" class="footer-link"%s aria-label="%s">%s</a>` $url (cond (and (not (hasPrefix $url "mailto:")) (not (hasPrefix $url "nostr:"))) ` target="_blank" rel="noopener"` "") ($name | title) ($name | title)) }}
+            {{ end }}
+            {{ end }}
+            {{ if .Site.Params.social.rss }}
+            {{ $links = $links | append (printf `<a href="%s" class="footer-link" target="_blank" rel="noopener" aria-label="RSS Feed">RSS</a>` (absURL "index.xml")) }}
+            {{ end }}
+            {{ delimit $links " - " | safeHTML }}
+        </p>
+        {{ end }}
+    </div>
+</div>
