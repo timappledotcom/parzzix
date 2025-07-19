@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://blog.timapple.com/categories/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/categories/general/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/tags/hugo/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/posts/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/tags/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/tags/theme/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/tags/welcome/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/posts/welcome/</loc>
+    <lastmod>2025-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.timapple.com/about/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url>
+</urlset>

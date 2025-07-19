@@ -1,0 +1,87 @@
+baseURL: "https://blog.timapple.com"  # Update this to your actual domain
+languageCode: "en-us"
+title: "Tim Apple Blog"
+theme: "parzzix"
+
+# Theme-specific parameters
+params:
+  # Site metadata
+  description: "A clean, minimalist blog theme inspired by Tim Apple's design"
+  author: "Your Name"
+  email: "your.email@example.com"
+
+  # Site branding
+  logo: "" # Path to logo image (optional)
+  favicon: "" # Path to favicon (optional)
+
+  # Social media links
+  social:
+    x: "https://x.com/timapple"  # Update with your actual X/Twitter handle
+    github: "https://github.com/timappledotcom"  # Update with your actual GitHub username
+    linkedin: "https://linkedin.com/in/timapple"  # Update with your actual LinkedIn username
+    mastodon: "https://mastodon.social/@timapple"  # Update with your actual Mastodon handle
+    bluesky: "https://bsky.app/profile/timapple.bsky.social"  # Update with your actual Bluesky handle
+    # email: "tim@timapple.com"  # Uncomment and add your email if you want to show email icon
+    rss: true # Enable RSS feed link
+
+  # Theme customization
+  theme:
+    # Color scheme (light/dark/auto)
+    colorScheme: "light"
+    # Show reading time on posts
+    showReadingTime: true
+    # Show post summaries on list pages
+    showSummary: true
+
+# Menu configuration
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+      weight: 2
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts/"
+      weight: 3
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: "github"
+    lineNos: true
+    codeFences: true
+
+# Pagination
+pagination:
+  pagerSize: 10
+  path: "page"
+
+# Taxonomies
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+# Output formats
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+
+# Related content
+related:
+  includeNewer: true
+  indices:
+    - name: "keywords"
+      weight: 100
+    - name: "tags"
+      weight: 80
+    - name: "categories"
+      weight: 60

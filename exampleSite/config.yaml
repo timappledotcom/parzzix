@@ -1,7 +1,11 @@
-baseURL: "https://example.com"
+baseURL: "https://blog.timapple.com"  # Replace with your actual domain
 languageCode: "en-us"
 title: "Tim Apple Blog"
 theme: "parzzix"
+
+# Deployment settings
+canonifyURLs: false
+relativeURLs: false
 
 # Theme-specific parameters
 params:
@@ -16,10 +20,10 @@ params:
 
   # Social media links
   social:
-    twitter: "https://twitter.com/yourusername"
+    x: "https://x.com/yourusername"
     github: "https://github.com/yourusername"
     linkedin: "https://linkedin.com/in/yourusername"
-    email: "mailto:your.email@example.com"
+    # email: ""  # Uncomment and add your email if you want to show email icon
     rss: true # Enable RSS feed link
 
   # Theme customization

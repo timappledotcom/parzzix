@@ -1492,6 +1492,42 @@ hr {
         position: relative;
     }
 
+    .header-top {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+
+    .site-branding {
+        width: 100%;
+        flex: none;
+    }
+
+    .header-social {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        gap: var(--space-lg);
+    }
+
+    // For very small screens, reduce icon size and spacing
+    @media (max-width: 480px) {
+        .header-social {
+            gap: var(--space-md);
+        }
+
+        .header-social-link {
+            width: 36px;
+            height: 36px;
+        }
+
+        .social-icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
     .site-navigation {
         width: 100%;
         position: relative;

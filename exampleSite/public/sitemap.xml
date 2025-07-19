@@ -2,48 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/tags/2025/</loc>
+    <loc>https://blog.timapple.com/tags/2025/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://blog.timapple.com/categories/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/current/</loc>
+    <loc>https://blog.timapple.com/tags/current/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/demo/</loc>
+    <loc>https://blog.timapple.com/categories/demo/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://blog.timapple.com/posts/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/recent-post/</loc>
+    <loc>https://blog.timapple.com/posts/recent-post/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://blog.timapple.com/tags/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>https://blog.timapple.com/</loc>
     <lastmod>2025-07-10T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/another-test/</loc>
+    <loc>https://blog.timapple.com/posts/another-test/</loc>
     <lastmod>2024-12-15T14:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/demo/</loc>
+    <loc>https://blog.timapple.com/tags/demo/</loc>
     <lastmod>2024-12-15T14:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/test/</loc>
+    <loc>https://blog.timapple.com/tags/test/</loc>
     <lastmod>2024-12-15T14:30:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/hugo/</loc>
+    <loc>https://blog.timapple.com/tags/hugo/</loc>
     <lastmod>2024-01-01T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/theme/</loc>
+    <loc>https://blog.timapple.com/tags/theme/</loc>
     <lastmod>2024-01-01T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/welcome/</loc>
+    <loc>https://blog.timapple.com/posts/welcome/</loc>
     <lastmod>2024-01-01T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://blog.timapple.com/about/</loc>
   </url>
 </urlset>

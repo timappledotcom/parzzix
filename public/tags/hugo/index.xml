@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Tim Apple Blog</title>
+    <link>https://blog.timapple.com/tags/hugo/</link>
+    <description>Recent content in Hugo on Tim Apple Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.timapple.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>https://blog.timapple.com/posts/welcome/</link>
+      <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
+      <guid>https://blog.timapple.com/posts/welcome/</guid>
+      <description>&lt;p&gt;Welcome to my new blog! This is my first post using the Parzzix theme.&lt;/p&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;This theme offers a clean, minimalist design that focuses on content readability. Here are some of its key features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clean Typography&lt;/strong&gt;: Easy-to-read fonts and proper spacing&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Responsive Design&lt;/strong&gt;: Works great on all devices&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Social Media Integration&lt;/strong&gt;: Connect with your audience&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast Loading&lt;/strong&gt;: Optimized for performance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;writing-posts&#34;&gt;Writing Posts&lt;/h2&gt;&#xA;&lt;p&gt;To create a new post, simply add a new markdown file to the &lt;code&gt;content/posts/&lt;/code&gt; directory with the proper front matter.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
