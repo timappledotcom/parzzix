@@ -2,7 +2,7 @@
 
 A clean, minimalist Hugo theme inspired by Tpika.page design aesthetic. Parzzix focuses on readability, performance, and simplicity while providing modern features for bloggers and writers.
 
-![Theme Preview](https://blog.timapple.com)
+[Theme Preview](https://blog.timapple.com)
 
 ## Features
 
